@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão-Resposta Interativo - 90 Questões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="cartao-container">
+        <header>
+            <h1>Cartão-Resposta Oficial</h1>
+            <p>Selecione suas alternativas para as 90 questões (91 a 180) e clique em finalizar.</p>
+        </header>
+
+        <div id="grid-questoes" class="grid-questoes">
+            <!-- As questões e bolinhas serão geradas automaticamente pelo JavaScript -->
+        </div>
+
+        <div class="actions">
+            <button id="submit-btn" class="btn-primary">Finalizar e Gerar Lista de Respostas</button>
+        </div>
+    </div>
+
+    <!-- Tela de Resultados / Lista de Itens Selecionados -->
+    <div class="container hide" id="result-container">
+        <h1>Resumo do Cartão-Resposta</h1>
+        <p id="summary-info"></p>
+        
+        <h2>Itens Selecionados</h2>
+        <div id="selected-list" class="selected-list"></div>
+        
+        <button id="restart-btn" class="btn-primary">Preencher Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
